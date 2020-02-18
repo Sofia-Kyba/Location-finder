@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9cc9f285bad5478aa5f8a47cf8f243f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9cc9f285bad5478aa5f8a47cf8f243f2" ></div>
+        
+</body>
+<script>    
+    
+            var map_9cc9f285bad5478aa5f8a47cf8f243f2 = L.map(
+                "map_9cc9f285bad5478aa5f8a47cf8f243f2",
+                {
+                    center: [69.1221, 20.31231],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    titles: "World Map",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f2430000c3944d19a532d099b502aab4 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9cc9f285bad5478aa5f8a47cf8f243f2);
+        
+    
+            var marker_380f0536dd1e4e6fb803168d751ae54f = L.marker(
+                [69.1221, 20.31231],
+                {"color": "brown", "fillColor": "blue"}
+            ).addTo(map_9cc9f285bad5478aa5f8a47cf8f243f2);
+        
+    
+            var icon_a0010d748efe4997a736edf09d21233c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_380f0536dd1e4e6fb803168d751ae54f.setIcon(icon_a0010d748efe4997a736edf09d21233c);
+        
+    
+        var popup_a991790df6de43a3ad6cbdb5153a12b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3a73c875c024449a4eb17d30b25538f = $(`<div id="html_e3a73c875c024449a4eb17d30b25538f" style="width: 100.0%; height: 100.0%;">My location</div>`)[0];
+            popup_a991790df6de43a3ad6cbdb5153a12b7.setContent(html_e3a73c875c024449a4eb17d30b25538f);
+        
+
+        marker_380f0536dd1e4e6fb803168d751ae54f.bindPopup(popup_a991790df6de43a3ad6cbdb5153a12b7)
+        ;
+
+        
+    
+    
+            var feature_group_c8ea6131440342c291defe606b89a901 = L.featureGroup(
+                {}
+            ).addTo(map_9cc9f285bad5478aa5f8a47cf8f243f2);
+        
+    
+            var marker_ecb39f212cb140cdac47b75386b80d50 = L.marker(
+                [69.6492969, 18.9548489],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_a730e8dff5984a67b0a781ef24b375aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ecb39f212cb140cdac47b75386b80d50.setIcon(icon_a730e8dff5984a67b0a781ef24b375aa);
+        
+    
+        var popup_d4e815ab158346d8a7bb79c73506b4fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_81ec24d321bc48e9aa9bfee26a40bd86 = $(`<div id="html_81ec24d321bc48e9aa9bfee26a40bd86" style="width: 100.0%; height: 100.0%;">NyFilmOrden (2004)</div>`)[0];
+            popup_d4e815ab158346d8a7bb79c73506b4fd.setContent(html_81ec24d321bc48e9aa9bfee26a40bd86);
+        
+
+        marker_ecb39f212cb140cdac47b75386b80d50.bindPopup(popup_d4e815ab158346d8a7bb79c73506b4fd)
+        ;
+
+        
+    
+    
+            var marker_8924fd1090d143c9b2774b5aa7d4b87c = L.marker(
+                [69.6492969, 18.9548489],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_65b1f7d09c8c489685d368842bf339de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8924fd1090d143c9b2774b5aa7d4b87c.setIcon(icon_65b1f7d09c8c489685d368842bf339de);
+        
+    
+        var popup_7f54946bf5d948d7b70f50c94d6b6443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f91c5527c1404141968391ce116d2bc5 = $(`<div id="html_f91c5527c1404141968391ce116d2bc5" style="width: 100.0%; height: 100.0%;">Fuck Norge (2004)</div>`)[0];
+            popup_7f54946bf5d948d7b70f50c94d6b6443.setContent(html_f91c5527c1404141968391ce116d2bc5);
+        
+
+        marker_8924fd1090d143c9b2774b5aa7d4b87c.bindPopup(popup_7f54946bf5d948d7b70f50c94d6b6443)
+        ;
+
+        
+    
+    
+            var marker_ef65eb75e7584552a75a354891390386 = L.marker(
+                [69.6492969, 18.9548489],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_43317b0fa42a4cfabdee2b57e63e3951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef65eb75e7584552a75a354891390386.setIcon(icon_43317b0fa42a4cfabdee2b57e63e3951);
+        
+    
+        var popup_9f57379fce6a42919641e2c24b8036b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d804ce03e2d840bfb0a0cc9d748a5094 = $(`<div id="html_d804ce03e2d840bfb0a0cc9d748a5094" style="width: 100.0%; height: 100.0%;">Takst (2004)</div>`)[0];
+            popup_9f57379fce6a42919641e2c24b8036b8.setContent(html_d804ce03e2d840bfb0a0cc9d748a5094);
+        
+
+        marker_ef65eb75e7584552a75a354891390386.bindPopup(popup_9f57379fce6a42919641e2c24b8036b8)
+        ;
+
+        
+    
+    
+            var marker_63e12a8ddeef4b959e696dc857df36c0 = L.marker(
+                [68.1560984, 14.2063777],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_b666380f9f284bdca629bbd65d0a61f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63e12a8ddeef4b959e696dc857df36c0.setIcon(icon_b666380f9f284bdca629bbd65d0a61f9);
+        
+    
+        var popup_ccee191bcb544104b128dde0aaa0d2ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b4d72bec14e4d46bcece68a4703b66b = $(`<div id="html_1b4d72bec14e4d46bcece68a4703b66b" style="width: 100.0%; height: 100.0%;">It's Time to Give In (2004)</div>`)[0];
+            popup_ccee191bcb544104b128dde0aaa0d2ed.setContent(html_1b4d72bec14e4d46bcece68a4703b66b);
+        
+
+        marker_63e12a8ddeef4b959e696dc857df36c0.bindPopup(popup_ccee191bcb544104b128dde0aaa0d2ed)
+        ;
+
+        
+    
+    
+            var marker_b04027e5e8e54aefb0e68029a42fc0ab = L.marker(
+                [68.1322216, 13.8437507],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_6230de2dfb1a4ede9b71d3dcd7a8b052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b04027e5e8e54aefb0e68029a42fc0ab.setIcon(icon_6230de2dfb1a4ede9b71d3dcd7a8b052);
+        
+    
+        var popup_20579c9cf8a44c2f90e62e72119e0c70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8bbc059a72db424d8100b2a9c76065a4 = $(`<div id="html_8bbc059a72db424d8100b2a9c76065a4" style="width: 100.0%; height: 100.0%;">Somewhere Over the Rainbow (2004)</div>`)[0];
+            popup_20579c9cf8a44c2f90e62e72119e0c70.setContent(html_8bbc059a72db424d8100b2a9c76065a4);
+        
+
+        marker_b04027e5e8e54aefb0e68029a42fc0ab.bindPopup(popup_20579c9cf8a44c2f90e62e72119e0c70)
+        ;
+
+        
+    
+    
+            var marker_8926036a831144d59483336002202cbf = L.marker(
+                [70.9827154, 25.9743779],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_d8835c9cc5db4c5a99cf4b23522d98ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8926036a831144d59483336002202cbf.setIcon(icon_d8835c9cc5db4c5a99cf4b23522d98ac);
+        
+    
+        var popup_cfe1d60dad4241eeb22ec5a09c9f9d54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc3c08799481474782eddc612a931333 = $(`<div id="html_cc3c08799481474782eddc612a931333" style="width: 100.0%; height: 100.0%;">På hau i havet (2004)</div>`)[0];
+            popup_cfe1d60dad4241eeb22ec5a09c9f9d54.setContent(html_cc3c08799481474782eddc612a931333);
+        
+
+        marker_8926036a831144d59483336002202cbf.bindPopup(popup_cfe1d60dad4241eeb22ec5a09c9f9d54)
+        ;
+
+        
+    
+    
+            var marker_c7179743afe14057b53690487924f6aa = L.marker(
+                [71.1699506, 25.7858893],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_7c282f5a3231400b89300aabefec1760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7179743afe14057b53690487924f6aa.setIcon(icon_7c282f5a3231400b89300aabefec1760);
+        
+    
+        var popup_90c7e8035624469ba2d6597e7146151f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05ee3c7b390545739dbe895a97622d43 = $(`<div id="html_05ee3c7b390545739dbe895a97622d43" style="width: 100.0%; height: 100.0%;">Die Mitte (2004)</div>`)[0];
+            popup_90c7e8035624469ba2d6597e7146151f.setContent(html_05ee3c7b390545739dbe895a97622d43);
+        
+
+        marker_c7179743afe14057b53690487924f6aa.bindPopup(popup_90c7e8035624469ba2d6597e7146151f)
+        ;
+
+        
+    
+    
+            var marker_ea33c3fc8c634ff7a7ce310d7a78b741 = L.marker(
+                [70.79904505, 29.150528646532546],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_fff06fa1d9e340bd828aed97091f6678 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea33c3fc8c634ff7a7ce310d7a78b741.setIcon(icon_fff06fa1d9e340bd828aed97091f6678);
+        
+    
+        var popup_84f01edad7d84987945f41930b4d51eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5963e21a354bdb9f576bd0faaa4de7 = $(`<div id="html_1c5963e21a354bdb9f576bd0faaa4de7" style="width: 100.0%; height: 100.0%;">Temalørdag: Mandskor og hornmusik (2004) (TV)</div>`)[0];
+            popup_84f01edad7d84987945f41930b4d51eb.setContent(html_1c5963e21a354bdb9f576bd0faaa4de7);
+        
+
+        marker_ea33c3fc8c634ff7a7ce310d7a78b741.bindPopup(popup_84f01edad7d84987945f41930b4d51eb)
+        ;
+
+        
+    
+    
+            var marker_e091e0a482e145dfb93affb794eee5d5 = L.marker(
+                [61.1333408, 10.426585544131413],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_6c047d1ba8964248a2c04a37acc05dbc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e091e0a482e145dfb93affb794eee5d5.setIcon(icon_6c047d1ba8964248a2c04a37acc05dbc);
+        
+    
+        var popup_76a4fed7002f450690a34527e88d25ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_972da775311d40d283155758cbf3735c = $(`<div id="html_972da775311d40d283155758cbf3735c" style="width: 100.0%; height: 100.0%;">Oskar (2004)</div>`)[0];
+            popup_76a4fed7002f450690a34527e88d25ce.setContent(html_972da775311d40d283155758cbf3735c);
+        
+
+        marker_e091e0a482e145dfb93affb794eee5d5.bindPopup(popup_76a4fed7002f450690a34527e88d25ce)
+        ;
+
+        
+    
+    
+            var marker_6b35747036444db58e8759c5c763849d = L.marker(
+                [61.1333408, 10.426585544131413],
+                {}
+            ).addTo(feature_group_c8ea6131440342c291defe606b89a901);
+        
+    
+            var icon_4ba762c18f884a5fb6331890f60db1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b35747036444db58e8759c5c763849d.setIcon(icon_4ba762c18f884a5fb6331890f60db1dc);
+        
+    
+        var popup_0cf6e23de75e4f7aa770ddee31e65d49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf4b5e7f96254df7bed2c0b74dfd3d0a = $(`<div id="html_cf4b5e7f96254df7bed2c0b74dfd3d0a" style="width: 100.0%; height: 100.0%;">Straks borte - plutselig tilbake (2004)</div>`)[0];
+            popup_0cf6e23de75e4f7aa770ddee31e65d49.setContent(html_cf4b5e7f96254df7bed2c0b74dfd3d0a);
+        
+
+        marker_6b35747036444db58e8759c5c763849d.bindPopup(popup_0cf6e23de75e4f7aa770ddee31e65d49)
+        ;
+
+        
+    
+    
+            var feature_group_e404df1681fd4442ba26b252a034450c = L.featureGroup(
+                {}
+            ).addTo(map_9cc9f285bad5478aa5f8a47cf8f243f2);
+        
+    
+            var circle_marker_7edf6dd6f12543fda1fdf80d7461acf1 = L.circleMarker(
+                [52.5170365, 13.3888599],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e404df1681fd4442ba26b252a034450c);
+        
+    
+        var popup_2a4c7dfda829482884dee35d2f44f76d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3520807912f468faec61717645a0f37 = $(`<div id="html_d3520807912f468faec61717645a0f37" style="width: 100.0%; height: 100.0%;">Berlin</div>`)[0];
+            popup_2a4c7dfda829482884dee35d2f44f76d.setContent(html_d3520807912f468faec61717645a0f37);
+        
+
+        circle_marker_7edf6dd6f12543fda1fdf80d7461acf1.bindPopup(popup_2a4c7dfda829482884dee35d2f44f76d)
+        ;
+
+        
+    
+    
+            var circle_marker_c1b41c529f85428a82a79a21360eed54 = L.circleMarker(
+                [40.4167047, -3.7035825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e404df1681fd4442ba26b252a034450c);
+        
+    
+        var popup_af4314553010468fa1a687c19c963412 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28449009e082448f81c6c8ca30c4020e = $(`<div id="html_28449009e082448f81c6c8ca30c4020e" style="width: 100.0%; height: 100.0%;">Madrid</div>`)[0];
+            popup_af4314553010468fa1a687c19c963412.setContent(html_28449009e082448f81c6c8ca30c4020e);
+        
+
+        circle_marker_c1b41c529f85428a82a79a21360eed54.bindPopup(popup_af4314553010468fa1a687c19c963412)
+        ;
+
+        
+    
+    
+            var circle_marker_7369f3925c8c4efd8825fb2f6b0e9832 = L.circleMarker(
+                [41.8933203, 12.4829321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e404df1681fd4442ba26b252a034450c);
+        
+    
+        var popup_e4d84971eea64ff0bc0f61bb63df74c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_625cda3edb5f46f49fdc11fdaaf8f895 = $(`<div id="html_625cda3edb5f46f49fdc11fdaaf8f895" style="width: 100.0%; height: 100.0%;">Rome</div>`)[0];
+            popup_e4d84971eea64ff0bc0f61bb63df74c6.setContent(html_625cda3edb5f46f49fdc11fdaaf8f895);
+        
+
+        circle_marker_7369f3925c8c4efd8825fb2f6b0e9832.bindPopup(popup_e4d84971eea64ff0bc0f61bb63df74c6)
+        ;
+
+        
+    
+    
+            var circle_marker_fa9290033d184967931cfde13d0e3099 = L.circleMarker(
+                [48.8566969, 2.3514616],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e404df1681fd4442ba26b252a034450c);
+        
+    
+        var popup_0efb83681ace414fafa1f93dc4c14cfa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_574c996aee0b4344935592ca0e4395dd = $(`<div id="html_574c996aee0b4344935592ca0e4395dd" style="width: 100.0%; height: 100.0%;">Paris</div>`)[0];
+            popup_0efb83681ace414fafa1f93dc4c14cfa.setContent(html_574c996aee0b4344935592ca0e4395dd);
+        
+
+        circle_marker_fa9290033d184967931cfde13d0e3099.bindPopup(popup_0efb83681ace414fafa1f93dc4c14cfa)
+        ;
+
+        
+    
+    
+            var circle_marker_825eebccd258486e8f6c957af70851c5 = L.circleMarker(
+                [44.4361414, 26.1027202],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(feature_group_e404df1681fd4442ba26b252a034450c);
+        
+    
+        var popup_f4260763dfe54a2e93c0e86827a0b68c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbd0e05333df461e8fdbaef1257d5b9d = $(`<div id="html_dbd0e05333df461e8fdbaef1257d5b9d" style="width: 100.0%; height: 100.0%;">Bucharest</div>`)[0];
+            popup_f4260763dfe54a2e93c0e86827a0b68c.setContent(html_dbd0e05333df461e8fdbaef1257d5b9d);
+        
+
+        circle_marker_825eebccd258486e8f6c957af70851c5.bindPopup(popup_f4260763dfe54a2e93c0e86827a0b68c)
+        ;
+
+        
+    
+    
+            var layer_control_6e457149c8f84e7a817a2e9f18bbca03 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f2430000c3944d19a532d099b502aab4,
+                },
+                overlays :  {
+                    "Movies" : feature_group_c8ea6131440342c291defe606b89a901,
+                    "Biggest cities of Europe" : feature_group_e404df1681fd4442ba26b252a034450c,
+                },
+            };
+            L.control.layers(
+                layer_control_6e457149c8f84e7a817a2e9f18bbca03.base_layers,
+                layer_control_6e457149c8f84e7a817a2e9f18bbca03.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_9cc9f285bad5478aa5f8a47cf8f243f2);
+        
+</script>
