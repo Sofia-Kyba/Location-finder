@@ -11,6 +11,7 @@ Information about purpose of the module.
 	- head: it contains all the information about html document (Meta Data, version of html document and style)
 	-body: it contains everything that will be displayed on the web page.
 
+
 	<!DOCTYPE> - defines the type of documents.
 	<head> - defines the whole information about the document.
 	<meta> - defines metadata about html document.
