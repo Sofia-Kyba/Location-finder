@@ -12,13 +12,13 @@ Information about purpose of the module.
 	-body: it contains everything that will be displayed on the web page.
 
 
-	<!DOCTYPE> - defines the type of documents.
-	<head> - defines the whole information about the document.
-	<meta> - defines metadata about html document.
-	<style> - defines style for html document; here you specify how html document will render in a browser.
-	<link> - connects document and external resource.
-	<body> - defines the body of document; it contains all the contents of this document (text, images, tables, etc.)
-	<div> - defines a section in html document.
+	!DOCTYPE - defines the type of documents.
+	head - defines the whole information about the document.
+	meta - defines metadata about html document.
+	style - defines style for html document; here you specify how html document will render in a browser.
+	link - connects document and external resource.
+	body - defines the body of document; it contains all the contents of this document (text, images, tables, etc.)
+	div - defines a section in html document.
 
 3. Conclusion about information given us by this map.
 	This we map illustrates us the closest locations of films that were shot during the needed year.
